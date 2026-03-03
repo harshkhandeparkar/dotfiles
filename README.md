@@ -3,7 +3,7 @@
 > This repository is an archive and no longer updated. The current dotfiles are at https://github.com/harshkhandeparkar/dotfiles. The "Hyprverse" theme is a tag/release on the new repo.
 
 Dotfiles for my Spiderverse-themed [Hyprland](https://hyprland.org) configuration on Arch Linux with an AMD dGPU + AMD CPU Laptop.
-![neofetch](./img/neofetch.png)
+![demo](./img/demo.png)
 
 
 See also: My personal [VSCode theme](https://github.com/harshkhandeparkar/personal-vscode-theme) and [Obsidian theme](https://github.com/harshkhandeparkar/personal-obsidian-theme).
@@ -36,34 +36,8 @@ See also: My personal [VSCode theme](https://github.com/harshkhandeparkar/person
 ### System
 - AMD + AMD
 
-### Components
-#### Hyprland
-- Dotfiles: `hypr/`
-- Config Directory: `~/.config/hypr`
-- See [hypr/README.md](./hypr/README.md)
-
-#### EWW
-- Dotfiles: `eww/`
-- Config Directory: `~/.config/eww`
-- See [eww/README.md](./eww/README.md)
-
-#### Rofi
-- Dotfiles: `rofi/`
-- Config Directory: `~/.config/rofi`
-- See [rofi/README.md](./rofi/README.md)
-
-
-#### SwayNotificationCenter
-- Dotfiles: `swaync/`
-- Config Directory: `~/.config/swaync`
-- See [swaync/README.md](./swaync/README.md)
-
-#### Cava
-- Dotfiles: `cava/`
-- Config Directory: `~/.config/cava`
-- See [cava/README.md](./cava/README.md)
-
 ### Images
+> [!WARNING]: These images are slightly outdated except for the login screen
 ![rofi](./img/rofi.png)
 ![cava-spotify](./img/cava-spotify.png)
 ![sddm](./img/sddm.png)
