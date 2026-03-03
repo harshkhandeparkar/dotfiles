@@ -1,5 +1,3 @@
-inoremap ii <Esc>
-tnoremap ii <C-\><C-n>
 set number
 set cursorline
 
