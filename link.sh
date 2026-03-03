@@ -55,6 +55,9 @@ install() {
 	$1 ./spotify/spotify-flags.conf ~/.config/spotify-flags.conf
 }
 
+echo "Updating git submodules"
+git submodule sync --init
+
 if [[ "$1" == "--copy" ]];
 then
 	remove_dirs
