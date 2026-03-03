@@ -56,7 +56,7 @@ install() {
 }
 
 echo "Updating git submodules"
-git submodule sync --init
+git submodule update --init
 
 if [[ "$1" == "--copy" ]];
 then
