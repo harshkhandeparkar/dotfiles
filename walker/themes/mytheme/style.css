@@ -1,6 +1,6 @@
 /* Color definitions */
-@define-color window_bg_color hsl(34, 40%, 12%);
-@define-color accent_bg_color hsl(34, 61%, 75%);
+@define-color window_bg_color hsl(298, 40%, 10%);
+@define-color accent_bg_color hsl(298, 100%, 75%);
 @define-color theme_fg_color #f2ecbc;
 @define-color error_bg_color #C34043;
 @define-color error_fg_color #DCD7BA;

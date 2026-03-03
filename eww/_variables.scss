@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$accent_color: #e6c498;
+$accent_color: hsl(298, 100%, 75%);
 $border_color: color.change($accent_color, $alpha:0.3);
 $active_color: color.change($accent_color, $alpha:0.2);
 $active_hover_color: color.change($accent_color, $alpha:0.3);

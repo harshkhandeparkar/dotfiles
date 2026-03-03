@@ -79,14 +79,24 @@ Rectangle {
 
             color: "white"
             timeFont.family: "Oxygen"
-
-            timeFont.pixelSize: 102
         }
 
         Column {
             id: mainColumn
             anchors.centerIn: parent
             spacing: 12
+            Text {
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: "white"
+                verticalAlignment: Text.AlignVCenter
+                height: text.implicitHeight
+                width: parent.width
+                text: "Enter the Spiderverse"
+                wrapMode: Text.WordWrap
+                font.pixelSize: 24
+                elide: Text.ElideRight
+                horizontalAlignment: Text.AlignHCenter
+            }
 
             Column {
                 width: parent.width
@@ -106,8 +116,7 @@ Rectangle {
                     font.pixelSize: 14
 
                     color: config.background_color
-                    opacity: 0.5
-                    borderColor: config.accent_color
+                    borderColor: "white"
                     hoverColor: config.accent_color
                     focusColor: config.accent_color
                     textColor: "white"
@@ -140,8 +149,7 @@ Rectangle {
                     font.pixelSize: 14
 
                     color: config.background_color
-                    opacity: 0.5
-                    borderColor: config.accent_color
+                    borderColor: "white"
                     hoverColor: config.accent_color
                     focusColor: config.accent_color
                     textColor: "white"
