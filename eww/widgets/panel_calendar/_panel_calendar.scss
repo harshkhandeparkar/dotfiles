@@ -1,11 +1,11 @@
 .panel_calendar {
 	background-color: $background_color;
+	border-radius: $border_radius;
 }
 
 calendar {
 	background: $background_color;
 	border: $border;
-	border-radius: $border_radius;
 
 	header {
 		border: none;

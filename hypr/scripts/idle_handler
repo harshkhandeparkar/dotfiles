@@ -1,7 +1,9 @@
 brightness_restore_file=/tmp/.idle-restore-brightness-level
 
 save_brightness_level() {
-	brightnessctl get > $brightness_restore_file
+	main_brightness=$(brightnessctl get)
+	external_brightness=$(get_external_brightness)
+	echo "${main_brightness},${external_brightness}"> $brightness_restore_file
 }
 
 get_restore_brightness_level() {
@@ -12,18 +14,30 @@ is_timeout_enabled() {
 	eww get "$1_timeout" | grep true
 }
 
+# Changing external monitor brightness using ddcutil
+get_external_brightness() {
+	ddcutil getvcp 10 | cut -d : -f2 | cut -d , -f1 | cut -d = -f2 | tr -d ' '
+}
+
+set_external_brightness() {
+	ddcutil setvcp 10 "$1"
+}
+
 case $1 in
 	"brightness-down")
 		if [[ $(is_timeout_enabled brightness) ]];
 		then
 			save_brightness_level
-			brightnessctl set $2
+			brightnessctl set 0
+			set_external_brightness 0
 		fi
 	;;
 	"brightness-restore")
 		if [[ $(is_timeout_enabled brightness) ]];
 		then
-			brightnessctl set $(get_restore_brightness_level)
+			brightness_levels=$(get_restore_brightness_level)
+			brightnessctl set $(echo $brightness_levels | cut -d ',' -f1)
+			set_external_brightness $(echo $brightness_levels | cut -d ',' -f2)
 		fi
 	;;
 	"screen_lock")

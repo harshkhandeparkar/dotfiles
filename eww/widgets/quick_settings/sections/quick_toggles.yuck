@@ -45,14 +45,14 @@
 		(icon_button
 			:icon "img/yaru-icons/system-shutdown-symbolic.svg"
 			:onclick "shutdown -h now"
-			:tooltip "Shutdown..."
+			:tooltip "hyprshutdown -p 'systemctl poweroff'"
 			:enabled true
 			:toggled false
 		)
 		(icon_button
 			:icon "img/yaru-icons/system-reboot-symbolic.svg"
-			:onclick "shutdown -r now"
-			:tooltip "Shutdown..."
+			:onclick "hyprshutdown -p 'systemctl reboot'"
+			:tooltip "Restart..."
 			:enabled true
 			:toggled false
 		)

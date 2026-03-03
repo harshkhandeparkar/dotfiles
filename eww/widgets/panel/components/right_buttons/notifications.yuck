@@ -14,7 +14,7 @@
 		:cursor "pointer"
 		:tooltip "Notifications"
 
-		:onmiddleclick "swaync-client --close-all"
+		:onmiddleclick "swaync-client --close-all && eww update notif_count=0"
 
 		(button
 			:onclick "swaync-client --toggle-panel"

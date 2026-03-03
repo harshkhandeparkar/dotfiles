@@ -1,14 +1,19 @@
 current_power_profile=$(powerprofilesctl get)
 eww update power_profile="loading"
 
+set_profile() {
+	powerprofilesctl set $1
+	eww update power_profile="$1"
+}
+
 case $current_power_profile in
 	"balanced")
-		powerprofilesctl set performance
+		set_profile performance
 		;;
 	"performance")
-		powerprofilesctl set power-saver
+		set_profile power-saver
 		;;
 	"power-saver")
-		powerprofilesctl set balanced
+		set_profile balanced
 		;;
 esac

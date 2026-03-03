@@ -1,5 +1,5 @@
 (defpoll dnd_status
-	:interval "100ms"
+	:interval "500ms"
 	:initial "false"
 	:run-while {panel_open}
 	"swaync-client --get-dnd"

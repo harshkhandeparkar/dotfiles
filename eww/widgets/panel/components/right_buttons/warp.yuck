@@ -1,5 +1,5 @@
 (defpoll warp_status
-	:interval "100ms"
+	:interval "1s"
 	:initial ""
 	:run-while {panel_open}
 	"zsh ./widgets/panel/scripts/warp status"
