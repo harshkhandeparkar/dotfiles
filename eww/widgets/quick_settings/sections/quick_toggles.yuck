@@ -50,6 +50,13 @@
 			:toggled false
 		)
 		(icon_button
+			:icon "img/breeze-dark/system-suspend-hibernate-symbolic.svg"
+			:onclick "systemctl hibernate"
+			:tooltip "Hibernate"
+			:enabled true
+			:toggled false
+		)
+		(icon_button
 			:icon "img/yaru-icons/system-reboot-symbolic.svg"
 			:onclick "hyprshutdown -p 'systemctl reboot'"
 			:tooltip "Restart..."

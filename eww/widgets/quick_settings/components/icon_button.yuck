@@ -6,13 +6,11 @@
 		:cursor "pointer"
 		:tooltip {tooltip}
 		:active {enabled}
-		(button
-			:onclick {onclick}
+		:onclick {onclick}
 			(image
 				:path {icon}
 				:image-height 30
 				:image-width 30
 			)
-		)
 	)
 )

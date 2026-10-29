@@ -59,10 +59,24 @@
 
 	button {
 		padding: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+
+        &:hover {
+          background-color: transparent;
+        }
 	}
 
 	.icon-btn {
 		border-radius: 50%;
+
+        & > button {
+          background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
 	}
 
 	// DROPDOWN

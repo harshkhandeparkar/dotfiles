@@ -1,7 +1,6 @@
 import { Gtk } from "ags/gtk4"
 import { createBinding } from "ags"
 import Battery from "gi://AstalBattery"
-import Ram from "giram"
 
 export function BatteryStatus() {
 	const battery = Battery.get_default();
@@ -22,6 +21,3 @@ export function BatteryStatus() {
 	)
 }
 
-export function RamUsage() {
-	const
-}

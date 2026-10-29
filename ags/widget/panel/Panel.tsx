@@ -2,6 +2,7 @@ import app from "ags/gtk4/app"
 import { Astal, Gtk, Gdk } from "ags/gtk4"
 import { createPoll } from "ags/time"
 import { BatteryStatus } from "./components/status"
+import { MediaStatus } from "./components/media"
 
 export default function Panel(gdkmonitor: Gdk.Monitor) {
 	const time = createPoll(
@@ -31,14 +32,11 @@ export default function Panel(gdkmonitor: Gdk.Monitor) {
 		>
 			<centerbox cssName="centerbox">
 				<box $type="start" class="panel-section panel-left">
-					<label label="MEDIA" />
+					<MediaStatus />
 				</box>
 
 				<menubutton hexpand $type="center" halign={Gtk.Align.CENTER} class="clock panel-center">
 					<label label={time} />
-					<popover>
-						<Gtk.Calendar />
-					</popover>
 				</menubutton>
 
 				<box orientation={Gtk.Orientation.HORIZONTAL} $type="end" class="panel-section panel-right">

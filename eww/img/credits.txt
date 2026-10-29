@@ -1,1 +1,2 @@
 Icons in yaru-icons from the Yaru-dark icon theme
+Icons in breeze-dark from the Breeze-dark icon theme

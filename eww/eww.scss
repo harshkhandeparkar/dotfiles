@@ -57,6 +57,10 @@ button {
 	background-color: transparent;
 	border: none;
 	transition: none;
+
+    &:hover {
+      background-color: transparent;
+    }
 }
 
 .btn {
