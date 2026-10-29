@@ -2,15 +2,16 @@
 remove_dirs() {
 	# .config
 	rm -r ~/.config/cava
-	rm -r ~/.config/eww
+	# rm -r ~/.config/eww
 	rm -r ~/.config/hypr
 	rm -r ~/.config/rofi
-	rm -r ~/.config/swaync
-	rm -r ~/.config/kitty
+	# rm -r ~/.config/swaync
+	# rm -r ~/.config/kitty
 	rm -r ~/.config/fastfetch
 	rm ~/.config/rofimoji.rc
 	rm -r ~/.config/nvim
 	rm -r ~/.config/walker
+	rm -r ~/.config/ashell
 
 	# ZSH
 	rm ~/.config/starship.toml
@@ -30,16 +31,17 @@ remove_dirs() {
 install() {
 	# .config
 	$1 ./cava ~/.config/
-	$1 ./eww ~/.config/
+	# $1 ./eww ~/.config/
 	$1 ./hypr ~/.config/
 	$1 ./rofi ~/.config/
-	$1 ./swaync ~/.config/
-	$1 ./kitty ~/.config/
+	# $1 ./swaync ~/.config/
+	# $1 ./kitty ~/.config/
 	$1 ./fastfetch ~/.config/
 	$1 ./rofimoji/rofimoji.rc ~/.config/rofimoji.rc
 	$1 ./nvim ~/.config/
 	$1 ./spotify/spotify-flags.conf ~/.config
 	$1 ./walker ~/.config
+	$1 ./ashell ~/.config
 
 	# ZSH
 	$1 ./zsh/starship.toml ~/.config/starship.toml
