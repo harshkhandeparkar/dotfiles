@@ -1,0 +1,27 @@
+hl.config({
+    decoration = {
+        rounding = 10,
+        active_opacity = 1,
+        inactive_opacity = 1,
+        dim_inactive = false,
+        dim_strength = 0.2,
+        blur = {
+            enabled = true,
+            size = 8,
+            passes = 1,
+            new_optimizations = true,
+        },
+        shadow = {
+            enabled = false,
+        }
+    },
+    general = {
+        gaps_in = 5,
+        gaps_out = 10,
+        border_size = 2,
+        col = {
+            active_border = "rgba(a0d9ff70)",
+            inactive_border = "rgba(59595999)",
+        }
+    }
+})
